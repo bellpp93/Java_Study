@@ -11,6 +11,13 @@ public class MotorBike {
 	// state
 	private int speed; // member variable(멤버 변수)
 	
+	// behaviour
+//	void setSpeed(int speed) { // local variable(지역 변수)
+//		this.speed = speed;
+//		System.out.println(speed); // 지역 변수의 speed를 출력
+//		System.out.println(this.speed); // 멤버 변수의 speed를 출력
+//	}
+
 	// Source - Getter, Setter 자동 코드생성
 	public int getSpeed() {
 		return speed;
