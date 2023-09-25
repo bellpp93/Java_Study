@@ -2,20 +2,34 @@ package com.in28minutes.oops;
 
 public class MotorBike {
 
-	// state
-	private int setSpeed; // member variable
+	/* method생성
+	   ※메서드는 (입력, 출력, 명칭) 세가지가 필요
+	   inputs → int speed
+	   outputs → void
+	   name → setSpeed */
 	
-	//behaviour
-	//method
-	//inputs - int speed
-	//outputs - void
-	//name - setSpeed
-	void setSpeed(int speed) { // local variable
-		this.setSpeed = speed;
-//		System.out.println(speed);
-//		System.out.println(this.speed);
+	// state
+	private int speed; // member variable(멤버 변수)
+	
+	// Source - Getter, Setter 자동 코드생성
+	public int getSpeed() {
+		return speed;
 	}
 	
+	public void setSpeed(int speed) {
+		if (speed > 0) {
+			this.speed = speed;
+		}
+	}
+	
+	public void increaseSpeed(int howMuch) {
+		setSpeed(this.speed + howMuch);
+	}
+
+	public void decreaseSpeed(int howMuch) {
+		setSpeed(this.speed - howMuch);
+	}
+
 	void start() {
 		System.out.println("Bike Started");
 	}
