@@ -3,6 +3,14 @@ package com.in28minutes.oops;
 public class Book {
 
 	private int noOfCopies;
+	
+	Book(int noOfCopies) {
+		this.noOfCopies = noOfCopies;
+	}
+
+	public Book() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public int getNoOfCopies() {
 		return noOfCopies;
