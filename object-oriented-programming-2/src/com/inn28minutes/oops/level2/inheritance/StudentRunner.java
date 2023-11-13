@@ -18,8 +18,8 @@ public class StudentRunner {
 		System.out.println(person);
 		*/
 		
-		Employee employee = new Employee();
-		employee.setName("Ranga");
+		Employee employee = new Employee("Ranga", "Programmer Analyst");
+//		employee.setName("Ranga");
 		employee.setEmail("ranga@in28minutes.com");
 		employee.setPhoneNumber("123-456-7890");
 		employee.setEmployeeGrade('A');
