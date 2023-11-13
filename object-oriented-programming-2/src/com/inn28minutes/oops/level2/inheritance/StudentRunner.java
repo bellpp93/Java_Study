@@ -8,6 +8,7 @@ public class StudentRunner {
 //		student.setName("Range");
 //		student.setEmail("in28minutes@gmail.com");
 		
+		/*
 		Person person = new Person();
 		person.setName("Ranga");
 		person.setEmail("ranga@in28minutes.com");
@@ -15,5 +16,15 @@ public class StudentRunner {
 		String value = person.toString();
 		System.out.println(value);
 		System.out.println(person);
+		*/
+		
+		Employee employee = new Employee();
+		employee.setName("Ranga");
+		employee.setEmail("ranga@in28minutes.com");
+		employee.setPhoneNumber("123-456-7890");
+		employee.setEmployeeGrade('A');
+		employee.setTitle("Programmer Analyst");
+		
+		System.out.println(employee);
 	}
 }
