@@ -11,13 +11,12 @@ class AscendingStudentComparator implements Comparator<Student> {
 	public int compare(Student student1, Student student2) {
 		return Integer.compare(student1.getId(), student2.getId());
 	}
-	
 }
 
 public class StudentsCollectionRunner {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		List<Student> students = List.of(new Student(1, "Ranga"),
 				new Student(100, "Adam"),
 				new Student(2, "Eve"));
