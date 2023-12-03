@@ -22,14 +22,14 @@ public class StudentsCollectionRunner {
 				new Student(2, "Eve"));
 		List<Student> studentsAI = new ArrayList<>(students);
 		
-		System.out.println(studentsAI);  // [1 Ranga, 100 Adam, 2 Eve]
+		System.out.println(studentsAI);  // [1 Ranga, 100 Adam, 2 Eve] 랜덤 수
 		
 		Collections.sort(studentsAI);
-		System.out.println("Desc " + studentsAI);  // Desc [100 Adam, 2 Eve, 1 Ranga]
+		System.out.println("Desc " + studentsAI);  // Desc [100 Adam, 2 Eve, 1 Ranga] 내림차순
 		
 //		Collections.sort(studentsAI, new AscendingStudentComparator());
 		
 		studentsAI.sort(new AscendingStudentComparator());
-		System.out.println("AscendingStudentComparator " + studentsAI);  // AscendingStudentComparator [1 Ranga, 2 Eve, 100 Adam]
+		System.out.println("AscendingStudentComparator " + studentsAI);  // AscendingStudentComparator [1 Ranga, 2 Eve, 100 Adam] 오름차순
 	}
 }
